@@ -35,7 +35,7 @@ export default function Navbar() {
                     <a href="#showcase" className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Our
                         Products</a>
                 </div> */}
-                <div className={`${navActive ? "active" : ""} nav__menu-list "p-4 hidden md:flex flex-row justify-between font-bold`}>
+                <div className={`${navActive ? "block" : "hidden"} absolute md:static right-0 top-15 nav__menu-list "p-4 md:flex flex-row justify-between font-bold bg-white md:bg-transparent`}>
                     {MENU_LIST.map((menu, idx) => (
                         <div
                         onClick={() => {
@@ -53,8 +53,8 @@ export default function Navbar() {
                 <div id="nav-open" className="p-4 md:hidden" onClick={() => setNavActive(!navActive)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                      className="feather feather-menu">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12" ></line> {/* className={`${navActive ? "-rotate-45" : "rotate-none"} origin-center transition-transform`} */}
+                        <line x1="3" y1="6" x2="21" y2="6" ></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </div>
