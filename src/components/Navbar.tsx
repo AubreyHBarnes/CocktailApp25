@@ -17,7 +17,7 @@ export default function Navbar() {
       ];
     return (
         <>
-            <nav id="nav" className="fixed inset-x-0 top-0 flex flex-row justify-between z-10  bg-transparent">
+            <nav id="nav" className="fixed inset-x-0 top-0 flex flex-row justify-between z-10 bg-transparent text-white">
 
                 <div className="p-4">
                     <div className="font-extrabold tracking-widest text-xl">
@@ -35,7 +35,7 @@ export default function Navbar() {
                     <a href="#showcase" className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Our
                         Products</a>
                 </div> */}
-                <div className={`${navActive ? "block" : "hidden"} absolute md:static right-0 top-15 nav__menu-list "p-4 md:flex flex-row justify-between font-bold bg-white md:bg-transparent`}>
+                <div className={`${navActive ? "block text-black" : "hidden"} absolute md:static right-0 top-15 nav__menu-list "p-4 md:flex flex-row justify-between font-bold bg-white md:bg-transparent`}>
                     {MENU_LIST.map((menu, idx) => (
                         <div
                         onClick={() => {

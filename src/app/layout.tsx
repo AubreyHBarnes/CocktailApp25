@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${FjallaOne.variable} ${CantarellSans.variable} antialiased`}
+        className={`${FjallaOne.variable} ${CantarellSans.variable} antialiased min-h-screen`}
       >
         {children}
       </body>
