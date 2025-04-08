@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   env:{
     UNSPLASH: process.env.UNSPLASH_API_KEY,
-    MEALDB: process.env.MEALDB_API_KEY
+    MEALDB: process.env.COCKTAILDB_API_KEY
   },
   images: {
     remotePatterns: [

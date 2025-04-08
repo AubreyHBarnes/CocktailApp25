@@ -28,5 +28,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specialtiesHeaderContainer {
-  background-image: url('/images/anil-sharma-fE3uYk0Ri1U-unsplash-1920.jpg');
+  background-image: url('/images/himanshu-choudhary-unsplash.jpg');
+}
+
+.specialtyImgContainer {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+    border-right:20px solid white; 
+  }
 }
